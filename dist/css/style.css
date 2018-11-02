@@ -10,6 +10,7 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
+  background-color: #fafcfe;
 }
 
 body,
@@ -41,6 +42,8 @@ li {
 
 .btn {
   font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: #ffffff;
   padding: 1.4rem 4rem;
   background: transparent;
@@ -112,8 +115,56 @@ li {
   padding-bottom: 5.5rem;
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .main-header__scroll {
   padding-top: 1.2rem;
+}
+
+.services {
+  padding-top: 6.5rem;
+  padding-bottom: 2rem;
+}
+
+.services__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2980b9;
+}
+
+.services__title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 0.5rem;
+  background: #2980b9;
+  margin: 1.5rem auto 0 auto;
+}
+
+.services__items {
+  margin-top: 6.5rem;
+}
+
+.services__item {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.services__item-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.services__item-text {
+  font-size: 1.3rem;
+}
+
+.services__item > * {
+  max-width: 50%;
+  margin: 0 auto;
 }
