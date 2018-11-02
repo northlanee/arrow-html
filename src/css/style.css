@@ -10,6 +10,7 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
+  background-color: #fafcfe;
 }
 
 body,
@@ -30,7 +31,7 @@ li {
 }
 
 .wrapper {
-  max-width: 117rem;
+  width: 117rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -41,6 +42,8 @@ li {
 
 .btn {
   font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: #ffffff;
   padding: 1.4rem 4rem;
   background: transparent;
@@ -55,7 +58,24 @@ li {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.section-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2980b9;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 0.5rem;
+  background: #2980b9;
+  margin: 1.5rem auto 0 auto;
+}
+
 .main-header {
+  min-width: 117rem;
   background: url("../img/hero-01.jpg") center/cover no-repeat;
   padding-top: 3.5rem;
   -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
@@ -112,8 +132,213 @@ li {
   padding-bottom: 5.5rem;
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .main-header__scroll {
   padding-top: 1.2rem;
+}
+
+.services {
+  padding-top: 6.5rem;
+  padding-bottom: 2rem;
+}
+
+.services__items {
+  margin-top: 6.5rem;
+}
+
+.services__item {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.services__item-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.services__item-text {
+  font-size: 1.3rem;
+}
+
+.services__item > * {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.portfolio {
+  background-blend-mode: multiply;
+  background: url("../img/hero-02.jpg") center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 20rem;
+  -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+}
+
+.portfolio__arrow {
+  width: 100%;
+  background: #fafcfe;
+  height: 27.5rem;
+  -webkit-clip-path: polygon(100% 0, 100% 30%, 50% 100%, 0 30%, 0 0);
+  clip-path: polygon(100% 0, 100% 30%, 50% 100%, 0 30%, 0 0);
+}
+
+.portfolio__title {
+  margin: 6.5rem auto;
+  color: #ffffff;
+}
+
+.portfolio__title::after {
+  background-color: #ffffff;
+}
+
+.portfolio__items {
+  width: 100%;
+}
+
+.portfolio__item {
+  width: 33.3%;
+  height: 20rem;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio__item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(166, 202, 226, 0.4);
+}
+
+.portfolio__more {
+  z-index: -1;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 5rem;
+  background-color: rgba(59, 138, 189, 0.8);
+}
+
+.portfolio__more-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.portfolio__more-icon {
+  max-width: 7rem;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.portfolio__item:hover .portfolio__more {
+  z-index: 1;
+}
+
+.portfolio__item img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.team {
+  padding-top: 6.5rem;
+}
+
+.team__list {
+  width: 100%;
+}
+
+.team__description {
+  max-width: 35rem;
+  font-size: 1.3rem;
+  margin: 2.5rem auto 5rem auto;
+}
+
+.team__member {
+  display: inline-block;
+  width: 25%;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.team__member-social {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 32%;
+  display: none;
+}
+
+.team__member-social a {
+  display: inline-block;
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.team__member-social img {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.team__member-photo {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+  z-index: -1;
+}
+
+.team__member-photo::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  background-color: rgba(59, 138, 189, 0.8);
+}
+
+.team__member-photo img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.team__member-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2980b9;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.team__member-occupation {
+  font-size: 1.5rem;
+}
+
+.team__member:hover .team__member-social,
+.team__member:hover .team__member-photo::before {
+  display: block;
 }
