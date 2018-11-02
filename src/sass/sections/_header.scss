@@ -1,0 +1,60 @@
+.main-header {
+
+  background: url("../img/hero-01.jpg") center/cover no-repeat;
+  padding-top: 3.5rem;
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+
+  &__menu-item, &__brand, &__navbar {
+    display: inline-block;
+  }
+
+  &__brand, &__navbar {
+    vertical-align: middle;
+  }
+
+  &__navbar {
+    width: calc(100% - 7.2rem);
+    text-align: right;
+  }
+
+  &__menu-item {
+    padding: 2rem 2.4rem;
+  }
+
+  &__navbar a {
+    color: $color-white;
+    display: block;
+    text-decoration: none;
+    padding: 0.2rem 0;
+    border-bottom: 2px solid transparent;
+  }
+
+  &__navbar a:hover, &__navbar a:active {
+    border-bottom: 2px solid $color-white;
+  }
+
+  &__content {
+    padding-top: 26rem;
+    padding-bottom: 23rem;
+  }
+
+  &__tagline {
+    color: $color-white;
+    max-width: 67rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 4rem auto 3rem auto;
+  }
+
+
+  &__mouse {
+    padding-bottom: 5.5rem;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  &__scroll {
+    padding-top: 1.2rem;
+  }
+
+}

@@ -1,0 +1,14 @@
+.btn {
+  font-family: "Raleway", sans-serif;
+  color: $color-white;
+  padding: 1.4rem 4rem;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid $color-white;
+  border-radius: 3px;
+}
+
+.btn:active, .btn:hover {
+  background: rgba(255,255,255,.5);
+}
