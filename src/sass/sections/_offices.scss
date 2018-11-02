@@ -1,0 +1,32 @@
+.offices {
+
+  background-blend-mode: multiply;
+  background:  url("../img/hero-03.jpg") center/cover no-repeat;
+  background-color: rgba(0,0,0,.7);
+  padding-bottom: 20rem;
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+
+  &__arrow {
+    width: 100%;
+    background: $color-body-bg;
+    height: 27.5rem;
+    clip-path: polygon(100% 0, 100% 40%, 50% 100%, 0 40%, 0 0);
+  }
+
+  &__title {
+    margin-top: 6.5rem;
+    margin-bottom: 2.5rem;
+    color: $color-white;
+    &::after {
+      background: $color-white;
+    }
+  }
+
+  &__description {
+    max-width: 34.5rem;
+    font-size: 1.3rem;
+    color: $color-white;
+    margin: 0 auto 6.6rem auto;
+  }
+
+}
